@@ -37,6 +37,7 @@ export default class MyDocument extends Document {
     }
   }
 
+  /* não colocar a pasta "public" nas path: linha 51 */
   render(): JSX.Element {
     return (
       <Html lang="pt">
@@ -47,8 +48,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
           />
-
-          <link rel="icon" href="https://rocketseat.com.br/favicon.ico" />
+          <link rel="shortcut icon" href="/assets/favicon.png" />
         </Head>
         <body>
           <Main />
